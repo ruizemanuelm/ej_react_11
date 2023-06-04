@@ -8,12 +8,12 @@ import Formulario from "./components/Formulario";
 function App() {
   return (
     <>
-        {/* <Titulo></Titulo>
+        <Titulo></Titulo>
         <hr />
       <Container className="">
         <Formulario ></Formulario>
         <ListaDeNoticias ></ListaDeNoticias>
-      </Container> */}
+      </Container>
     </>
   );
 }
