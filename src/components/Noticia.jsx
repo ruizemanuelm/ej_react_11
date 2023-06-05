@@ -1,20 +1,24 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
-const Noticia = () => {
+import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+const Noticia = ({noti}) => {
     return (
-        <div>
-              <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+        <article className=' col-lg-3 col-md-6 my-1 col-sm-12'>
+
+              <Card className='h-100 m-2' >
+            <Card.Img variant="top" src={noti.image_url} />
+            <Card.Body className='h-100'>
+              <Card.Title className='text-truncate'> <b>{noti.title} </b> </Card.Title>
+              <Card.Text className='text-truncate'>
+            {noti.description}
               </Card.Text>
             </Card.Body>
-          </Card>
-        </div>
+            <Card.Footer className='text-center'>
+            <Button href={noti.link}>ver noticia completa </Button>
+        </Card.Footer>
+              
+          </Card>      
+
+        </article>
     );
 };
 

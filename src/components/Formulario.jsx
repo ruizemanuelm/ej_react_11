@@ -3,7 +3,7 @@ import { Container, Form, Row,Col } from "react-bootstrap";
 
 const Formulario = () => {
   return (
-    <div className="border rounded p-4">
+    <div className=" border rounded p-4">
         <Row >
         <Col>
         <h3>Buscar por categoria:</h3>
