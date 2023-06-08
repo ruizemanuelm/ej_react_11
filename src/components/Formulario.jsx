@@ -9,8 +9,7 @@ const Formulario = () => {
         <h3>Buscar por categoria:</h3>
         </Col>
         <Col>
-        <Form.Select aria-label="Default select example">
-        <option disabled>Opciones</option>
+        <Form.Select disabled aria-label="Default select example">
       </Form.Select>
         </Col>
       </Row>
