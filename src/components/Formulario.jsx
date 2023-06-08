@@ -6,7 +6,7 @@ const Formulario = () => {
     <div className=" border rounded p-4">
         <Row >
         <Col>
-        <h3>Buscar por categoria:</h3>
+        <h3>Buscar</h3>
         </Col>
         <Col>
         <Form.Select disabled aria-label="Default select example">

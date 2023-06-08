@@ -14,7 +14,8 @@ function App() {
     try {
       // peticion get
       const respuestas = await fetch(
-        "https://newsdata.io/api/1/news?apikey=pub_24026c2c114769105d06d38634b3a8d66f3d7&language=es");
+        "https://newsdata.io/api/1/news?apikey=pub_24026c2c114769105d06d38634b3a8d66f3d7"
+      );
       const dato = await respuestas.json();
       console.log(dato.results);
       setNoticias(dato.results);
